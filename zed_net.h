@@ -1,13 +1,11 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 //
-// zed_net - v0.18 - public domain networking library
+// zed_net - v0.19 - public domain networking library
 // (inspired by the excellent stb libraries: https://github.com/nothings/stb)
 //
 // This library is intended primarily for use in games and provides a simple wrapper
 // around BSD sockets (Winsock 2.2 on Windows). Sockets can be set to be blocking or
-// non-blocking.
-//
-// Only UDP sockets are supported at this time, but this may later expand to include TCP.
+// non-blocking. Both UDP and TCP sockets are supported.
 //
 // VERSION HISTORY
 //
@@ -553,5 +551,3 @@ ZED_NET_DEF int zed_net_tcp_socket_receive(zed_net_socket_t *remote_socket, void
 }
 
 #endif // ZED_NET_IMPLEMENTATION
-
-// vim: tabstop=4 shiftwidth=4 expandtab
